@@ -27,6 +27,7 @@ li {
 }
 
 .grid {
+  margin-top: 3%;
   padding-left: 10%;
   padding-right: 10%;
   display: grid;
