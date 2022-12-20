@@ -35,6 +35,7 @@ li {
 }
 
 .grid-item {
+  animation: fadein 1s;
   cursor: pointer;
   text-align: center;
   border-radius: 10px;
@@ -42,4 +43,19 @@ li {
   background-color: #fff;
   padding: 10px;
   margin: 10px;
+}
+
+.grid-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+  transform: scale(1.03);
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
